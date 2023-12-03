@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html style = "font-family: 'Courier';">
+    <head>
+        <title>Restaurant Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+
+        <!-- <link rel = "icon" href = "img/mdb-favicon.ico" type = "image/x-icon"> -->
+        <!-- css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="css/basic-template.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <!-- javascript link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- icon fonts stylesheet -->
+        <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier';
+            background-color: #e2f5eb;
+        }
+        footer {
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+        <!-- changing the color of the navbar -->
+        <nav class = "navbar fixed-top navbar-expand-md text-black justify-content-between navbar-light" style = "background-color: #bbe838;">
+            <!-- this class will keep the website information aligned in a box -->
+            <div class = "container-fluid">
+                <!-- brand logo for your navbar -->
+                <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "55" height = "55" class = "d inline-block align-top rounded-pill">
+                    Mindful Savory & Sweets</a>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarTogglerCollapsible" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse" id = "navbarTogglerCollapsible">
+                    <!-- <a class = "navbar-brand" href = "#">[Insert Restaurant Name]</a> -->
+                    <div class = "navbar-nav nav-pills">
+                        <!-- lets you specify the link that is currently active -->
+                        <a class = "nav-item nav-link" href = "homepage.html">Home</a>
+                        <a class = "nav-item nav-link" href = "aboutUs.html">About Us</a>
+                        <a class = "nav-item nav-link" href = "menu.html">Menu</a>
+                        <a class = "nav-item nav-link" href = "orderOnline.html">Order Online</a>
+                        <a class = "nav-item nav-link active" style = "background-color: #8bd884;" href = "contactUs.html">Contact Us <span class = "sr-only"></span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- welcome statement -->
+        <div class = "container col">
+            <br><br><br><br>
+            <h1 class = "rounded row text-center text-black d-flex justify-content-center" style = "background-color: #ff985e;"><b>Mindful Savory & Sweets | Contact Us</b></h1>
+            <br><br><br>
+            <h6 class = "text-center" style = "color: #ff985e; font-weight: bold;">"Food is our common ground, a universal experience." - James Beard</h6><br>
+            <h6 style = "font-weight: bold" class = "text-center text-black">We can be contacted at <a href = "mailto: msavorysweets23@gmail.com" style = "color: #ff985e;">msavorysweets23@gmail.com</a></h6>
+            <br>
+        </div>
+
+        <!-- use an accordion for the restaurant hours -->
+        <div class = "container col">
+            <div class = "text-center text-black mt-4">
+                <h2 style = "font-weight: bold;">Restaurant Hours</h2>
+            </div>
+            <div class = "mt-4"></div>
+            <br>
+            <div class = "accordion" id = "accordion1">
+                <div class = "accordion-item">
+                    <h2 class = "accordion-header">
+                        <button class = "accordion-button text-center text-black" type = "button" data-bs-toggle = "collapse" data-bs-target = "#collapseOne" aria-expanded = "true" aria-controls = "collapseOne">
+                            Restaurant Hours
+                        </button>
+                    </h2>
+                    <!-- content for the accordion -->
+                    <div id = "collapseOne" class = "text-center text-black accordion-collapse collapse show" data-bs-parent = "#accordion1">
+                        <div class = "accordion-body">
+                            <p><span style = "float: left;">Sunday</span><span style = "float: right; color: #ff985e">Closed</span></p>
+                            <br>
+                            <p><span style = "float: left;">Monday</span><span style = "float: right;">2:00pm - 10:00pm</span></p>
+                            <br>
+                            <p><span style = "float: left;">Tuesday</span><span style = "float: right; color: #ff985e">Closed</span></p>
+                            <br>
+                            <p><span style = "float: left;">Wednesday</span><span style = "float: right;">11:00am - 10:00pm</span></p>
+                            <br>
+                            <p><span style = "float: left;">Thursday</span><span style = "float: right;">11:00am - 10:00pm</span></p>
+                            <br>
+                            <p><span style = "float: left;">Friday</span><span style = "float: right;">11:00am - 10:00pm</span></p>
+                            <br>
+                            <p><span style = "float: left;">Saturday</span><span style = "float: right;">2:00pm - 10:00pm</span></p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- container end -->
+        </div>
+
+        <div class = "mt-4"></div>
+
+        <br>
+
+        <div class = "container col">
+            <div class = "text-center text-black mt-4">
+                <h5 style = "font-weight: bold;">Leave a Message.</h5>
+                <br>
+            </div>
+            <!-- contact form -->
+            <div class = "text-center text-black mt-4">
+                <form>
+                    <!-- first name input -->
+                    <div class = "input-group mb-4">
+                        <!-- first name input -->
+                        <div class = "input-group-prepend">
+                            <span style = "background-color: #ff985e;" class = "input-group-text" id = "message1">First Name</span>
+                        </div>
+                        <input type = "text" class = "form-control w-75">
+                    </div>
+                    <!-- last name input -->
+                    <div class = "input-group mb-4">
+                        <!-- last name input -->
+                        <div class = "input-group-prepend">
+                            <span style = "background-color: #ff985e;" class = "input-group-text" id = "message2">Last Name</span>
+                        </div>
+                        <input type = "text" class = "form-control w-75">
+                    </div>
+                    <!-- phone number irput -->
+                    <div class = "input-group mb-4">
+                        <div class = "input-group-prepend">
+                            <span style = "background-color: #ff985e;" class = "input-group-text" id = "message4">Phone Number</span>
+                        </div>
+                        <input type = "text" class = "form-control w-75">
+                    </div>
+                    <!-- email input -->
+                    <div class = "input-group mb-4">
+                        <div class = "input-group-prepend">
+                            <span style = "background-color: #ff985e;" class = "input-group-text" id = "message5">Email</span>
+                        </div>
+                        <input type = "email" class = "form-control w-75">
+                    </div>
+                    <!-- message -->
+                    <div class = "input-group">
+                        <!-- message -->
+                        <div class = "input-group-prepend">
+                            <span style = "background-color: #ff985e;" class = "input-group-text" id = "message3">Message</span>
+                        </div>
+                        <textarea class = "form-control" aria-label = "Message"></textarea>
+                    </div>
+                    <div class = "mt-4">
+                        <a href = "#"><button class = "btn" style = "background-color: #ff985e;" type = "button">Submit</button></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class = "col">
+            <footer class = "text-center text-black" style = "background-color: #bbe838">
+                <!-- grid container -->
+                <div class = "container-fluid">
+                    <!-- social media links -->
+                    <section class = "mt-5">
+                        <!-- grid row -->
+                        <div class = "row text-center d-flex justify-content-center pt-5">
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "homepage.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Homepage</a>
+                                </h5>
+                            </div>
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <!-- text-uppercase -->
+                                <h5 class = "font-weight-bold">
+                                    <a href = "aboutUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">About Us</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "menu.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Menu</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "orderOnline.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Order Online</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "contactUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Contact Us</a>
+                                </h5>
+                            </div>
+                        <!-- end grid row -->
+                        </div>
+                    <!-- end links -->
+                    </section>
+
+                    <hr class = "my-3">
+
+                    <!-- <div class = "col"> -->
+                    <!-- grid container -->
+                    <div class = "container p-5">
+                        <!-- social media links -->
+                        <section class = "">
+                            <!-- grid row -->
+                            <div class = "row text-center expand-md d-flex justify-content-center pt-12">
+                                <!-- instagram -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://instagram.com/">
+                                            <!-- <img src = "insta.png" width = "25" height = "25"> -->
+                                            <i style = "color: #ef008c;" class = "bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- twitter -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://twitter.com/">
+                                            <!-- <img src = "twitter.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- facebook -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://facebook.com/">
+                                            <!-- <img src = "facebook.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- yelp -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://yelp.com/">
+                                            <!-- <img src = "yelp.png" width = "35" height = "25"> -->
+                                            <i style = "color: #a80000;" class = "bi bi-yelp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- linkedin -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://linkedin.com/">
+                                            <!-- <img src = "linkedin.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- gmail -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://google.com/">
+                                            <!-- <img src = "gmail.png" width = "32" height = "23"> -->
+                                            <i style = "color: #d82c20;" class = "bi bi-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <!-- end grid row -->
+                            </div>
+                        <!-- end links -->
+                        </section>
+                    </div>
+                    <hr class = "my-3">
+
+                    <div class = "text-center p-5" style = "background-color: #bbe838;">
+                        <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "30" height = "30" class = "d inline-block align-top rounded-pill"></a>
+                        Mindful Savory & Sweets | © 2023 Copyright
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html style = "font-family: 'Courier';">
+    <head>
+        <title>Restaurant Menu</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+
+        <!-- <link rel = "icon" href = "img/mdb-favicon.ico" type = "image/x-icon"> -->
+        <!-- css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="css/basic-template.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <!-- javascript link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- icon fonts stylesheet -->
+        <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier';
+            background-color: #e2f5eb;
+        }
+        footer {
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+        <!-- changing the color of the navbar -->
+        <nav class = "navbar fixed-top navbar-expand-md text-black justify-content-between navbar-light" style = "background-color: #bbe838;">
+            <!-- this class will keep the website information aligned in a box -->
+            <div class = "container-fluid">
+                <!-- brand logo for your navbar -->
+                <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "55" height = "55" class = "d inline-block align-top rounded-pill">
+                    Mindful Savory & Sweets</a>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarTogglerCollapsible" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse" id = "navbarTogglerCollapsible">
+                    <!-- <a class = "navbar-brand" href = "#">[Insert Restaurant Name]</a> -->
+                    <div class = "navbar-nav nav-pills">
+                        <!-- lets you specify the link that is currently active -->
+                        <a class = "nav-item nav-link" href = "homepage.html">Home</a>
+                        <a class = "nav-item nav-link" href = "aboutUs.html">About Us</a>
+                        <a class = "nav-item nav-link active" style = "background-color: #8bd884;" href = "menu.html">Menu <span class = "sr-only"></span></a>
+                        <a class = "nav-item nav-link" href = "orderOnline.html">Order Online</a>
+                        <a class = "nav-item nav-link" href = "contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- welcome statement -->
+        <div class = "container col">
+            <!-- <div class = "row text-center d-flex justify-content-center pt-5">
+                <br><br><br><br>
+                <img src = "main-menu1.png" width = "1000" height = "350">
+            </div> -->
+            <br><br><br><br>
+            <h1 class = "rounded row text-center text-black d-flex justify-content-center" style = "background-color: #70b0e0;"><b>Mindful Savory & Sweets | Main Menu</b></h1>
+            <br><br>
+            <h4 class = "text-center text-black"><b>Check out our menu! Scroll to take a closer look at what we offer here at Mindful Savory & Sweets.</b></h4>
+        </div>
+
+        <!-- main attraction -->
+        <div class = "container text-center text-black mt-5"> 
+            <div class = "row align-items-start">
+                <div class = "mt-3">
+                    <h4 style = ><b>Our Main Attractions</b></h4>
+                </div>
+                <div class = "text-center text-black mt-3">
+                    <p>Click the button under each image to get more details about them.</p>
+                </div>
+                <!-- appetizer main attraction -->
+                <div class = "col">
+                    <div class = "text-center mt-4">
+                        <img src = "main1.jpg" class = "text-center rounded img-thumbnail w-100">
+                        <div class = "mt-2">
+                            <button type = "button" class = "btn text-black" data-bs-container = "body" data-bs-title = "Appetizer: Garlic Bread" data-bs-toggle = "popover" data-bs-placement = "right" style = "color: black; background-color: #70b0e0;"
+                                data-bs-content = "This appetizer has a delectable garlic butter spread and is topped with grated parmesan and mozzarella cheese and served with a side of zesty marinara dipping sauce.">
+                                Garlic Bread
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- entree main attraction -->
+                <div class = "col">
+                    <div class = "text-center mt-4">
+                        <img src = "main2.jpg" class = "text-center rounded img-thumbnail w-100">
+                        <div class = "mt-2">
+                            <button type = "button" class = "btn text-black" data-bs-container = "body" data-bs-title = "Entree: Fish Tacos" data-bs-toggle = "popover" data-bs-placement = "right" style = "color: black; background-color: #70b0e0;"
+                            data-bs-content = "This entree is a savory baked fish taco with fresh flavors of garlic, cumin, and lime and topped with coleslaw and some cilantro spread over it.">
+                            Baked Fish Tacos
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- dessert main attraction -->
+                <div class = "col">
+                    <div class = "text-center mt-4">
+                        <img src = "main3.jpg" class = "text-center rounded img-thumbnail w-100">
+                        <div class = "mt-4">
+                            <button type = "button" class = "btn text-black" data-bs-container = "body" data-bs-title = "Dessert: Profiteroles" data-bs-toggle = "popover" data-bs-placement = "right" style = "color: black; background-color: #70b0e0;"
+                            data-bs-content = "This dessert is a flavorsome French choux pastry ball filled with a small scoop of icecream and drizzled on top is a smooth chocolate sauce.">
+                            Profiteroles
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            <!-- row end -->
+            </div>
+        <!-- end of main attraction -->
+        </div> 
+
+        <div class = "mt-5"></div>
+
+        <div class = "mt-5 text-center text-black mt-3">
+            <p>In order to obtain more information about the food you are currently interested in, click "More" for the options that have it.</p>
+        </div>
+
+        <div class = "mt-5"></div>
+
+        <!-- appetizer menu -->
+        <div class = "container text-center text-black p-5" style = "background-color: #d8d7bf;">
+            <div class = "row align-items-start mt-4">
+                <h4 class = "rounded" style = "background-color: #c4b07b;"><b>Appetizers</b></h4>
+                <div class = "col">
+                    <br>
+                    <h5><b>Bang Bang Shrimp</b></h5>
+                    <p>Crispy, fried shrimp tossed in a creamy, spicy sauce and served with cocktail sauce.</p>
+                    <h5><b>Nachos</b></h5>
+                    <p>Nachos are loaded with seasoned beef, guacamole, pico de gallo, bacon, and green jalepeno peppers.</p>
+                    <h5><b>Angus Beef Sliders</b></h5>
+                    <!-- use a collapse toggle with "More" -->
+                    <p >Beef Sliders are served in threes and made classic diner style.<button style = "color: #0078d7" class = "btn" type = "button" 
+                        data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample2" aria-expanded = "false" aria-controls = "multiCollapseExample2">More</button></p>
+                        <div class = "collapse multi-collapse" id = "multiCollapseExample2">
+                            <div class = "card card-body">
+                                Each slider is topped with a mayo and ketchup spread, three slices of yellow, American cheese,
+                            onions, lettuce, another slice of cheese, and another spread of mayo and ketchup.
+                            <br><br>
+                            <img src = "food10.jpg" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    <h5><i class = "bi bi-star-fill"><b> Garlic Bread</b></i></h5>
+                    <p>Garlic bread served in fives and has a smooth garlic butter spread, topped with grated parmesan and mozzarella cheese, and served with marinara sauce.</p>
+                </div>
+                <div class = "col">
+                    <br>
+                    <h5><b>Boneless Chicken Wings</b></h5>
+                    <p>Chicken wings are tossed in a sweet thai chilli sauce, and are typically served with ranch or honey mustard.</p>
+                    <h5><b>Shrimp Cocktail</b></h5>
+                    <p>Jumbo shrimp tossed in a classic shrimp cocktail sauce and served in a bed of lettuce.</p>
+                    <h5><b>Teriyaki Skewers</b></h5>
+                    <!-- use a collapse toggle with "More" -->
+                    <p>Chicken marinated in teriyaki sauce and grilled to perfection. <button style = "color: #0078d7" class = "btn" type = "button" 
+                        data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample3" aria-expanded = "false" aria-controls = "multiCollapseExample3">More</button></p>
+                        <div class = "collapse multi-collapse" id = "multiCollapseExample3">
+                            <div class = "card card-body">
+                                Sesame seeds will be sprinkled on top, along with fresh parsely and cilantro. These can also be entrees
+                                with the option of being served over steamed white rice or fried rice.
+                                <br><br>
+                                <img src = "food11.jfif" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    <h5><b>Mozzarella Sticks</b></h5>
+                    <p>Deep fried with melted cheese inside and served with a marinara dipping sauce.</p>
+                </div>
+            <!-- row end -->
+            </div>
+        <!-- container end -->
+        </div>
+
+        <div class = "mt-5"></div>
+
+        <!-- entree menu -->
+        <div class = "container text-center text-black p-5" style = "background-color: #d8d7bf;">
+            <div class = "row align-items-start mt-4">
+                <h4 class = "rounded" style = "background-color: #c4b07b;"><b>Entrees</b></h4>
+                <div class = "col">
+                    <br>
+                    <h5><b>Baked Fish Tacos</b></h5>
+                    <p>Made with crispy, baked fish and topped with green jalepeno peppers, grated parmesan cheese, and a cilantro-lime coleslaw.</p>
+                    <h5><i class = "bi bi-star-fill"></i><b> Chicken Tikka Masala</b></h5>
+                    <!-- use a collapse toggle with "More" -->
+                    <p>An Indian curry dish that is tomato based, seasoned with garlic, ginger, and fenugreek leaves that leave a minty aftertaste.<button style = "color: #0078d7" class = "btn" type = "button" 
+                        data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExampleA" aria-expanded = "false" aria-controls = "multiCollapseExampleA">More</button></p>
+                        <div class = "collapse multi-collapse" id = "multiCollapseExampleA">
+                            <div class = "card card-body">
+                                Chicken is topped with cilantro and served with rice and either garlic naan or cheese naan.
+                                <br><br>
+                                <img src = "food1.jpg" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    <h5><b>Pasta Primavera</b></h5>
+                    <p>Pasta is seasoned with salt and pepper and is tossed with a vegetable mixture, including cherry tomatoes, that has been seasoned 
+                        with oil, salt, pepper, and dried herbs.</p>
+                    <h5></i><b> Tri-Tip Steak</b></h5>
+                    <p>Pan roasted steak, topped with green asparagus, oyster mushrooms, cherry tomatoes, and italian parsely, chimichurri and ficelle crostini.</p>
+                    <br>
+                    <h4 class = "rounded" style = "background-color: #c4b07b;"><b>Sandwiches</b></h4>
+                    <br>
+                    <h5><i class = "bi bi-star-fill"></i><b> Philly Cheesesteak</b></h5>
+                    <!-- use a collapse toggle with "More" -->
+                    <p>Sandwich composed of thinly sliced steak, coated in melted cheese, sauteed onions, and sometimes fajita veggies.<button style = "color: #0078d7" class = "btn" type = "button"
+                        data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample4" aria-expanded = "false" aria-controls = "multiCollapseExample4">More</button></p> 
+                        <div class = "collapse multi-collapse" id = "multiCollapseExample4">
+                            <div class = "card card-body">
+                                Each bite is packed with a savory flavor, impact guaranteed to last.
+                                <br><br>
+                                <img src = "food2.jpg" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    <h5><b>Colossal Sandwich</b></h5>
+                    <p>Sandwich composed of avocado, ham, bacon, lettuce, tomatoes, and two slightly melted American cheese slices, usually served within toasted bread.</p>
+                    <h5><b>BLT</b></h5>
+                    <p>A known classic, served with bacon, lettuce, cheese, and tomato, with a mayo spread on toasted bread.</p>
+                    <h5><b>Bondiola Sandwich</b></h5>
+                    <p>An Argentinan classic sandwich that is composed of thick slices of roasted pork shoukder and served on top of toasted brioche bread slices.</p>
+                </div>
+                <div class = "col">
+                    <br>
+                    <h5><b>Chicken Fettuccine Alfredo</b></h5>
+                    <p>Pasta should be creamy, smooth, and topped with 6 slices of chicken breasts either cut into halves or cubes.</p>
+                    <h5><b>Cast Iron Pizza</b></h5>
+                    <p>A pizza that should be made in a cast-iron skillet and returned with crispy edges and a browned crust. Toppings should vary, with our most commonly used ones being 
+                        pepperoni, sausage, grilled chicken, mushrooms, meatballs.
+                    </p>
+                    <br>
+                    <h4 class = "rounded" style = "background-color: #c4b07b;"><b>Salads</b></h4>
+                    <br>
+                    <h5><b>Caesar Salad</b></h5>
+                    <p>A staple salad, served with greens, croutons, and cheese, and sauced in a creamy dressing of any choice, most usually caesar dressing.</p>
+                    <h5><i class = "bi bi-star-fill"></i><b> Cobb Salad</b></h5>
+                    <!-- use a collapse toggle with "More" -->
+                    <p>Another staple salad that is composed of lettuce and greens, topped with bacon, shredded cheese, sliced boiled eggs, corn, tomatoes, with an optional choice of chicken, and is usually dressed with 
+                        avocado lime dressing.<button style = "color: #0078d7" class = "btn" type = "button"
+                        data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample5" aria-expanded = "false" aria-controls = "multiCollapseExample5">More</button></p> 
+                        <div class = "collapse multi-collapse" id = "multiCollapseExample5">
+                            <div class = "card card-body">
+                                The chicken the salad can be topped with varies between fried chicken, grilled, chicken, hot-grilled chicken, cold-grilled chicken, spicy-grilled chicken, and so much more!
+                                <br><br>
+                                <img src = "food3.jpg" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    </p>
+                    <h5><b>Greek Salad</b></h5>
+                    <p>A salad composed of fresh cucumber, peppers, tomatoes, and red onions, sauced with a vinaigrette dressing that is often composed of garlic, oregano, mustard, vinegar, and salt.</p>
+                    <h5><b>Panzanella</b></h5>
+                    <!-- use a collapse toggle with "More" -->
+                    <p>A refreshing Italian salad composed of stale bread, tomatoes, and cucumbers, along with other fresh vegetables.<button style = "color: #0078d7" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample6" aria-expanded = "false" aria-controls = "multiCollapseExample6">More</button></p>
+                    <div class = "collapse multi-collapse" id = "multiCollapseExample6">
+                        <div class = "card card-body">
+                            It's typically sauced in a vinaigrette dressing of either light balsamic vinaigrette or apple cider vinaigrette.
+                            <br><br>
+                            <img src = "food4.jpg" class = "rounded w-100">
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            <!-- end row -->
+            </div>
+        <!-- end container -->
+        </div>
+
+        <div class = "mt-5"></div>
+
+        <!-- dessert menu -->
+        <div class = "container text-center text-black p-5" style = "background-color: #d8d7bf;">
+            <div class = "row align-items-start mt-4">
+                <h4 class = "rounded" style = "background-color: #c4b07b;"><b>Desserts</b></h4>
+                <div class = "col">
+                    <br>
+                    <h5><i class = "bi bi-star-fill"></i><b> Profiteroles</b></h5>
+                    <p>A French choux pastry ball that can be filled with either custard or ice cream, and is then drizzled with chocolate.</p>
+                    <h5><b>Millionaire's Shortbread</b></h5>
+                    <p>A shortbread bar that is layered with a buttery shortbread, a thick caramel layer, and topped with a dark chocolate spread that has an
+                        optional topping of sea salt.
+                    </p>
+                    <h5><b>Cannoli</b></h5>
+                    <!-- uses a collapse toggle with "More" -->
+                    <p>A classic Italian dessert.<button style = "color: #0078d7" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample7" aria-expanded = "false" aria-controls = "multiCollapseExample7">More</button></p>
+                    <div class = "collapse multi-collapse" id = "multiCollapseExample7">
+                        <div class = "card card-body">
+                            It consists of a fried pastry dough that can be filled with cream cheese by itself or cream cheese topped with chocolate chips on the ends, or
+                                they can even be drizzled with chocolate.
+                            <br><br>
+                            <img src = "food5.jfif" class = "rounded w-100">
+                        </div>
+                        <br><br>
+                    </div>
+                    <h5><b>Baklava</b></h5>
+                    <!-- uses a collapse toggle with "More" -->
+                    <p>A Greek delicacy that consists of layers of crispy phyllo dough, honey, and nuts.<button style = "color: #0078d7" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample8" aria-expanded = "false" aria-controls = "multiCollapseExample8">More</button></p>
+                    <div class = "collapse multi-collapse" id = "multiCollapseExample8">
+                        <div class = "card card-body">
+                            The nuts vary from chopped pistachios, walnuts, or hazelnuts.
+                            <br><br>
+                            <img src = "food8.jpeg" class = "rounded w-100">
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+                <div class = "col">
+                    <br>
+                    <h5><b>Cheesecake Brownie</b></h5>
+                    <!-- uses a collapse toggle with "More" -->
+                    <p>These cheesecake brownies consist of the usual chocolate brownie mix.<button style = "color: #0078d7;" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample9" aria-expanded = "false" aria-controls = "multiCollapseExample9">More</button></p> 
+                        <div class = "collapse multi-collapse" id = "multiCollapseExample9">
+                            <div class = "card card-body">
+                                They are then be topped with cream cheese, that have various 
+                                designs made on them.
+                                <br><br>
+                                <img src = "food6.jpg" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    <h5><i class = "bi bi-star-fill"></i><b> Tiramisu</b></h5>
+                    <!-- uses a collapse toggle with "More" -->
+                    <p>A classic no-bake Italian dessert that consists of coffee-soaked ladyfingers, a creamy mascarpone custard, topped with whipped cream and a dust of cocoa powder.</p>
+                    <h5><b>Cinnamon Rolls</b></h5>
+                    <p>A fluffy, soft dessert.<button style = "color: #0078d7;" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample10" aria-expanded = "false" aria-controls = "multiCollapseExample10">More</button></p>
+                        <div class = "collapse multi-collapse" id = "multiCollapseExample10">
+                            <div class = "card card-body">
+                                It consists of a cinnamon brown sugar filling, glazed on top with vanilla cream cheese.
+                                <br><br>
+                                <img src = "food7.jpg" class = "rounded w-100">
+                            </div>
+                            <br><br>
+                        </div>
+                    <h5><b>Red Velvet Cake</b></h5>
+                    <p>A moist and flavorful cake dessert that consists of red velvet flavored cake layers with fluffy cream cheese frosting filled in between each layer.</p>
+                </div>
+            <!-- row end -->
+            </div>
+        <!-- end container -->
+        </div>
+
+        <!-- return to order online -->
+        <div class = "container text-center text-black">
+            <div class = "row align-items-start mt-4">
+                <br><br>
+                <h6>If you began an order, click here to return to it.</h6>
+                <br><br>
+                <div class = "col">
+                    <!-- browse foods -->
+                    <a href = "orderOnline.html"><button class = "btn" style = "background-color: #70b0e0" type = "button">Return to Order</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class = "col">
+            <footer class = "text-center text-black" style = "background-color: #bbe838">
+                <!-- grid container -->
+                <div class = "container-fluid">
+                    <!-- social media links -->
+                    <section class = "mt-5">
+                        <!-- grid row -->
+                        <div class = "row text-center d-flex justify-content-center pt-5">
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "homepage.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Homepage</a>
+                                </h5>
+                            </div>
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <!-- text-uppercase -->
+                                <h5 class = "font-weight-bold">
+                                    <a href = "aboutUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">About Us</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "menu.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Menu</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "orderOnline.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Order Online</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "contactUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Contact Us</a>
+                                </h5>
+                            </div>
+                        <!-- end grid row -->
+                        </div>
+                    <!-- end links -->
+                    </section>
+
+                    <hr class = "my-3">
+
+                    <!-- <div class = "col"> -->
+                    <!-- grid container -->
+                    <div class = "container p-5">
+                        <!-- social media links -->
+                        <section class = "">
+                            <!-- grid row -->
+                            <div class = "row text-center expand-md d-flex justify-content-center pt-12">
+                                <!-- instagram -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://instagram.com/">
+                                            <!-- <img src = "insta.png" width = "25" height = "25"> -->
+                                            <i style = "color: #ef008c;" class = "bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- twitter -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://twitter.com/">
+                                            <!-- <img src = "twitter.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- facebook -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://facebook.com/">
+                                            <!-- <img src = "facebook.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- yelp -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://yelp.com/">
+                                            <!-- <img src = "yelp.png" width = "35" height = "25"> -->
+                                            <i style = "color: #a80000;" class = "bi bi-yelp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- linkedin -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://linkedin.com/">
+                                            <!-- <img src = "linkedin.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- gmail -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://google.com/">
+                                            <!-- <img src = "gmail.png" width = "32" height = "23"> -->
+                                            <i style = "color: #d82c20;" class = "bi bi-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <!-- end grid row -->
+                            </div>
+                        <!-- end links -->
+                        </section>
+                    </div>
+                    <hr class = "my-3">
+
+                    <div class = "text-center p-5" style = "background-color: #bbe838;">
+                        <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "30" height = "30" class = "d inline-block align-top rounded-pill"></a>
+                        Mindful Savory & Sweets | © 2023 Copyright
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </footer>
+        </div>
+    <!-- javascript that triggers the popover -->
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+        </script>
+    </body>
+</html>

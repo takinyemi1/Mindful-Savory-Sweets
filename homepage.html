@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Restaurant Homepage</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+
+        <!-- <link rel = "icon" href = "img/mdb-favicon.ico" type = "image/x-icon"> -->
+        <!-- css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="css/basic-template.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <!-- javascript link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- icon fonts stylesheet -->
+        <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier';
+            background-color: #e2f5eb;
+        }
+        footer {
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+        <!-- <h2 style = "text-align: center;">Homepage</h2> -->
+        <!-- changing the color of the navbar -->
+        <!-- fixed-top -->
+        <nav class = "navbar navbar-expand-md text-black fixed-top justify-content-between navbar-light" style = "background-color: #bbe838;">
+            <!-- this class will keep the website information aligned in a box -->
+            <div class = "container-fluid">
+                <!-- brand logo for your navbar -->
+                <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "55" height = "55" class = "d inline-block align-top rounded-pill">
+                Mindful Savory & Sweets</a>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarTogglerCollapsible" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse" id = "navbarTogglerCollapsible">
+                    <!-- <a class = "navbar-brand" href = "#">[Insert Restaurant Name]</a> -->
+                    <div class = "navbar-nav nav-pills">
+                        <!-- lets you specify the link that is currently active -->
+                        <a class = "nav-item nav-link active" style = "background-color: #8bd884;" href = "homepage.html">Home <span class = "sr-only"></span></a>
+                        <a class = "nav-item nav-link" href = "aboutUs.html">About Us</a>
+                        <a class = "nav-item nav-link" href = "menu.html">Menu</a>
+                        <a class = "nav-item nav-link" href = "orderOnline.html">Order Online</a>
+                        <a class = "nav-item nav-link" href = "contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class = "container col">
+            <br><br><br><br>
+            <h1 class = "rounded row text-center text-black d-flex justify-content-center" style = "background-color: #8d6fd1"><b>Mindful Savory & Sweets | Homepage</b></h1>
+        </div>
+
+        <br><br><br><br>
+        <!-- horizontal card -->
+        <div class = "container text-center text-black card mb-3" style = "max-width: 900px;">
+            <div class = "row g-0">
+                <div class = "card text-center mb-3 col-md-4">
+                    <img src = "dinner.jfif" class = "img-fluid rounded" width = "600">
+                </div>
+                <div class = "col-md-8">
+                    <div class = "card-body">
+                        <h5 class = "card-header"><b>Dish of the Day</b></h5>
+                        <br>
+                        <p class = "card-text">Our dish of the day can be described as pan-roasted tri-tip steak, topped with green asparagus, cherry
+                            tomatoes, oyster mushrooms, italian parsely chimichurri and ficelle crostini.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "container text-center text-black">
+            <div class = "row align-items-start">
+                <!-- About Us Carousel -->
+                <div class = "col">
+                    <div id = "carouselExampleAutoplaying" class = "carousel slide" data-bs-ride = "carousel" style = "text-align: center;">
+                        <br><br><br>
+                        <h3 style = "text-align: center;"><b>About Us</b></h3>
+                        <br>
+                        <!-- the slideshow -->
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "aboutus1.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "aboutus2.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "aboutus3.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <!-- left and right controls -->
+                            <button class = "carousel-control-next" type = "button" data-bs-target = "carouselExample" data-bs-slide = "prev">
+                                <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Next</span>
+                            </button>
+                            <button class = "carousel-control-prev" type = "button" data-bs-target = "carouselExample" data-bs-slide = "next">
+                                <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Previous</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Menu Carousel -->
+                <div class = "col">
+                    <div id = "carouselExampleAutoplaying" class = "carousel slide" data-bs-ride = "carousel" style = "text-align: center;">
+                        <br><br><br>
+                        <h3 style = "text-align: center;"><b>Menu</b></h3>
+                        <br>
+                        <!-- the slideshow -->
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "app1.png" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "app2.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "app3.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "app4.jpeg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <!-- left and right controls -->
+                            <button class = "carousel-control-next" type = "button" data-bs-target = "carouselExample" data-bs-slide = "prev">
+                                <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Next</span>
+                            </button>
+                            <button class = "carousel-control-prev" type = "button" data-bs-target = "carouselExample" data-bs-slide = "next">
+                                <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Previous</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Order Online Carousel -->
+                <div class = "col">
+                    <div id = "carouselExampleAutoplaying" class = "carousel slide" data-bs-ride = "carousel" style = "text-align: center;">
+                        <br><br><br>
+                        <h3 style = "text-align: center;"><b>Order Online</b></h3>
+                        <br>
+                        <!-- the slideshow -->
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "order1.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "order2.png" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "order3.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <!-- left and right controls -->
+                            <button class = "carousel-control-next" type = "button" data-bs-target = "carouselExample" data-bs-slide = "prev">
+                                <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Next</span>
+                            </button>
+                            <button class = "carousel-control-prev" type = "button" data-bs-target = "carouselExample" data-bs-slide = "next">
+                                <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Previous</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Us Carousel -->
+                <div class = "col">
+                    <div id = "carouselExampleAutoplaying" class = "carousel slide" data-bs-ride = "carousel" style = "text-align: center;">
+                        <br><br><br>
+                        <h3 style = "text-align: center;"><b>Contact Us</b></h3>
+                        <br>
+                        <!-- the slideshow -->
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "contact.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "contact2.jpg" class = "img-thumbnail d-block w-100">
+                            </div>
+                            <!-- left and right controls -->
+                            <button class = "carousel-control-next" type = "button" data-bs-target = "carouselExample" data-bs-slide = "prev">
+                                <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Next</span>
+                            </button>
+                            <button class = "carousel-control-prev" type = "button" data-bs-target = "carouselExample" data-bs-slide = "next">
+                                <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                                <span class = "visually-hidden">Previous</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- container for login/register modal -->
+        <div class = "container text-center text-black mt-5">
+            <div class = "row align-items-start">
+                <!-- login modal -->
+                <div class = "col" id = "loginModal">
+                    <h6>Already have an account?</h6>
+                    <br>
+                    <!-- button to trigger modal -->
+                    <button type = "button" class = "btn text-black" data-bs-toggle = "modal" data-bs-target = "#staticBackDrop1" style = "background-color: #8d6fd1;">
+                        Login
+                    </button>
+
+                    <!-- modal -->
+                    <div class = "modal fade" id = "staticBackDrop1" tabindex = "-1" aria-labelledby = "exampleModalLabel1" aria-hidden = "true">
+                        <div class = "modal-dialog text-black d-flex justify-content-center">
+                            <div class = "modal-content w-75">
+                                <div class = "modal-header">
+                                    <br>
+                                    <h5 class = "modal-title" id = "exampleModalLabel1">Login</h5>
+                                    <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                                </div>
+                                <div class = "modal-body p-4">
+                                    <!-- register form -->
+                                    <form>
+                                        <!-- email input -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "email2">Email Address</label>
+                                            <input type = "text" id = "email2" class = "form-control">
+                                        </div>
+                                        <!-- password input -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "pass1">Password</label>
+                                            <input type = "text" id = "pass1" class = "form-control">
+                                        </div>
+
+                                        <!-- forgot password -->
+                                        <p><a href = "#!" class = "link-offset-2 link-underline link-underline-opacity-0">Forgot Password?</a></p>
+                                        <!-- submit button -->
+                                        <a href = "#"><button type = "submit" class = "btn btn-block" style = "background-color: #8d6fd1;">Login</button></a>
+
+                                        <br><br>
+                                        <p>Don't have an acccount? <a href = "#registerModal" class = "link-offset-2 link-underline link-underline-opacity-0">Register</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col" id = "registerModal">
+                    <h6>If not, create an account.</h6>
+                    <br>
+
+                    <!-- button to trigger modal -->
+                    <button type = "button" class = "btn text-black" data-bs-toggle = "modal" data-bs-target = "#staticBackDrop2" style = "background-color: #8d6fd1;">
+                        Register
+                    </button>
+
+                    <!-- modal -->
+                    <div class = "modal fade" id = "staticBackDrop2" tabindex = "-1" aria-labelledby = "exampleModalLabel2" aria-hidden = "true">
+                        <div class = "modal-dialog text-black d-flex justify-content-center">
+                            <div class = "modal-content w-75">
+                                <div class = "modal-header">
+                                    <br>
+                                    <h5 class = "modal-title" id = "exampleModalLabel2">Register</h5>
+                                    <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                                </div>
+                                <div class = "modal-body p-4">
+                                    <!-- register form -->
+                                    <form>
+                                        <!-- first name input -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "fname">First Name</label>
+                                            <input type = "text" id = "fname" class = "form-control">
+                                        </div>
+                                        <!-- last name input -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "lname">Last Name</label>
+                                            <input type = "text" id = "lname" class = "form-control">
+                                        </div>
+                                        <!-- email input -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "email2">Email Address</label>
+                                            <input type = "text" id = "email2" class = "form-control">
+                                        </div>
+                                        <!-- password input -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "pass1">Password</label>
+                                            <input type = "text" id = "pass1" class = "form-control">
+                                        </div>
+                                        <!-- re-enter password -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "pass2">Re-enter Password</label>
+                                            <input type = "text" id = "pass2" class = "form-control">
+                                        </div>
+                                        <!-- phone number -->
+                                        <div class = "form-outline mb-4">
+                                            <label class = "form-label" for = "pnum">Phone Number</label>
+                                            <input type = "text" id = "pnum" class = "form-control">
+                                        </div>
+                                        <div class = "form-check mb-4">
+                                            <label class = "form-check-label">I agree to sign up for alerts about new deals and secret benefits here at [Insert Restaurant Name].</label>
+                                            <input class = "form-check-input" type = "checkbox" id = "check1" name = "option1">
+                                        </div>
+                                        <div class = "form-check mb-4">
+                                            <label class = "form-check-label">I agree to the <a href = "!#" class = "link-offset-2 link-underline link-underline-opacity-0">Terms and Services</a>.</label>
+                                            <input class = "form-check-input" type = "checkbox" id = "check1" name = "option1">
+                                        </div>
+                                        <!-- submit button -->
+                                        <button type = "submit" class = "btn btn-block" style = "background-color: #8d6fd1;">Register</button>
+
+                                        <br><br>
+                                        <p>Already have an account? <a href = "#loginModal" class = "link-offset-2 link-underline link-underline-opacity-0">Login</a></p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class = "col">
+            <footer class = "text-center text-black" style = "background-color: #bbe838">
+                <!-- grid container -->
+                <div class = "container-fluid">
+                    <!-- social media links -->
+                    <section class = "mt-5">
+                        <!-- grid row -->
+                        <div class = "row text-center d-flex justify-content-center pt-5">
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "homepage.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Homepage</a>
+                                </h5>
+                            </div>
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <!-- text-uppercase -->
+                                <h5 class = "font-weight-bold">
+                                    <a href = "aboutUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">About Us</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "menu.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Menu</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "orderOnline.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Order Online</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "contactUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Contact Us</a>
+                                </h5>
+                            </div>
+                        <!-- end grid row -->
+                        </div>
+                    <!-- end links -->
+                    </section>
+
+                    <hr class = "my-3">
+
+                    <!-- <div class = "col"> -->
+                    <!-- grid container -->
+                    <div class = "container p-5">
+                        <!-- social media links -->
+                        <section class = "">
+                            <!-- grid row -->
+                            <div class = "row text-center expand-md d-flex justify-content-center pt-12">
+                                <!-- instagram -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://instagram.com/">
+                                            <!-- <img src = "insta.png" width = "25" height = "25"> -->
+                                            <i style = "color: #ef008c;" class = "bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- twitter -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://twitter.com/">
+                                            <!-- <img src = "twitter.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- facebook -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://facebook.com/">
+                                            <!-- <img src = "facebook.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- yelp -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://yelp.com/">
+                                            <!-- <img src = "yelp.png" width = "35" height = "25"> -->
+                                            <i style = "color: #a80000;" class = "bi bi-yelp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- linkedin -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://linkedin.com/">
+                                            <!-- <img src = "linkedin.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- gmail -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://google.com/">
+                                            <!-- <img src = "gmail.png" width = "32" height = "23"> -->
+                                            <i style = "color: #d82c20;" class = "bi bi-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <!-- end grid row -->
+                            </div>
+                        <!-- end links -->
+                        </section>
+                    </div>
+                    <hr class = "my-3">
+
+                    <div class = "text-center p-5" style = "background-color: #bbe838;">
+                        <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "30" height = "30" class = "d inline-block align-top rounded-pill"></a>
+                        Mindful Savory & Sweets | © 2023 Copyright
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

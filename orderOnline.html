@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html style = "font-family: 'Courier';">
+    <head>
+        <title>Restaurant Order Online</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+
+        <!-- <link rel = "icon" href = "img/mdb-favicon.ico" type = "image/x-icon"> -->
+        <!-- css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="css/basic-template.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <!-- javascript link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- icon fonts stylesheet -->
+        <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier';
+            background-color: #e2f5eb;
+        }
+        footer {
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+        <!-- changing the color of the navbar -->
+        <nav class = "navbar fixed-top navbar-expand-md text-black justify-content-between navbar-light" style = "background-color: #bbe838;">
+            <!-- this class will keep the website information aligned in a box -->
+            <div class = "container-fluid">
+                <!-- brand logo for your navbar -->
+                <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "55" height = "55" class = "d inline-block align-top rounded-pill">
+                    Mindful Savory & Sweets</a>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarTogglerCollapsible" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse" id = "navbarTogglerCollapsible">
+                    <!-- <a class = "navbar-brand" href = "#">[Insert Restaurant Name]</a> -->
+                    <div class = "navbar-nav nav-pills">
+                        <!-- lets you specify the link that is currently active -->
+                        <a class = "nav-item nav-link" href = "homepage.html">Home</a>
+                        <a class = "nav-item nav-link" href = "aboutUs.html">About Us</a>
+                        <a class = "nav-item nav-link" href = "menu.html">Menu</a>
+                        <a class = "nav-item nav-link active" style = "background-color: #8bd884;" href = "orderOnline.html">Order Online <span class = "sr-only"></span></a>
+                        <a class = "nav-item nav-link" href = "contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- welcome statement -->
+        <div class = "container col">
+            <!-- <div class = "row text-center d-flex justify-content-center pt-5">
+                <br><br><br><br>
+                <img src = "main-menu1.png" width = "1000" height = "350">
+            </div> -->
+            <br><br><br><br>
+            <h1 class = "rounded row text-center text-black d-flex justify-content-center" style = "background-color: #ffbbed;"><b>Mindful Savory & Sweets | Order Online</b></h1>
+            <br><br><br>
+            <h5 class = "text-center text-black"><b>Click "Find a Restaurant Near You" in order to get a dropdown of the restaurants near you.</b></h5>
+            <br>
+        </div>
+
+        <div class = "container text-center text-black">
+            <div class = "row align-items-start mt-4">
+                <div class = "col">
+                    <!-- find a restaurant near you -->
+                    <button class = "btn" style = "background-color: #ffbbed;" type = "button" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample1" aria-expanded = "false" aria-controls = "multiCollapseExample1">Find a Restaurant Near You</button>
+                    
+                    <div class = "mt-4 collapse multi-collapse" id = "multiCollapseExample1">
+                        <div class = "text-center card card-body">
+                            <div class = "input-group mb-5">
+                                <!-- <div class = "mt-5"></div> -->
+                                <input class = "form-control w-50" type = "text" id = "zip" placeholder = "Enter Zip Code">
+                                <!-- zip code submit button -->
+                                <div class = "input-group-append">
+                                    <button style = "background-color: #ffbbed;" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#collapseExample2" aria-expanded = "false" aria-controls = "collapseExample2">Submit</button>
+                                </div>
+                            </div>
+                            <div class = "container row align-items-start mt-4">
+                                <div class = "text-center collapse" id = "collapseExample2">
+                                    <h6><b>Choose the address that is closest to you and submit.</b></h6>
+                                    <div class = "mt-4"></div>
+                                    <!-- radio buttons for each address -->
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">3091 Boulevard, Colonial Heights, VA 23834</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">1 Dunlop Village, Colonial Heights, VA 23834</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">384 Southpark Boulevard, Colonial Heights, VA 23834</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1"> <!-- checked -->
+                                        <label class = "form-check-label" for = "flexRadioDefault11">2423 W Hundred Rd, Chester, VA, 23831</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">3040 Bankhead Hwy, Austell, GA 30168</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">3835 Austell Rd SW, Marietta, GA 30008</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">4795 Jimmy Lee Smith Parkway, Hiram, GA 30141</label>
+                                    </div>
+                                    <!-- submit button -->
+                                    <div class = "mt-4">
+                                        <a href = "#"><button style = "background-color: #ffbbed;" class = "btn" type = "button">Choose Location</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class = "mt-4"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row ends -->
+            </div>
+            <!-- container ends -->
+        </div>
+
+        <!-- browse foods -->
+        <div class = "container col mt-4">
+            <br><br>
+            <h5 class = "text-center text-black"><b>Click "Browse Foods" to get directed to the menu where you'll be able to select the courses you would like delivered.</b></h5>
+            <br>
+        </div>
+
+        <div class = "container text-center text-black">
+            <div class = "row align-items-start mt-4">
+                <div class = "col">
+                    <!-- browse foods -->
+                    <a href = "menu.html"><button class = "btn" style = "background-color: #ffbbed;" type = "button">Browse Foods</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- order now -->
+        <div class = "container col mt-4">
+            <br><br>
+            <h5 class = "text-center text-black"><b>Click "Order Now" in order to begin the process of ordering your food.</b></h5>
+            <br>
+        </div>
+
+        <div class = "container text-center text-black">
+            <div class = "row align-items-start mt-4">
+                <div class = "col">
+                    <!-- order now -->
+                    <button class = "btn bi bi-app-indicator" style = "background-color: #ffbbed;" type = "button" data-bs-toggle = "collapse" data-bs-target = "#collapseExample3" aria-expanded = "false" aria-controls = "collapseExample3">   Order Now</button>
+                    <!-- open the order -->
+                    <div class = "mt-4 collapse multi-collapse" id = "collapseExample3">
+                        <div class = "text-center card card-body">
+                           <h2><b>Order Summary</b></h2>
+                           <br>
+                           <h2><b>Mindful Savory & Sweets</b></h2>
+                            <div class = "form-check mt-4">
+                                <br>
+                                <p><b>Restaurant Address</b></p>
+                                <label class = "form-check-label" for = "address2">384 Southpark Boulevard, Colonial Heights, VA 23834</label>
+                            </div>
+                            <div class = "form-check mt-4">
+                                <br>
+                                <p><b>Delivery Address</b></p>
+                                <label class = "form-check-label" for = "address3">1 Hayden Dr, Petersburg, VA 23806</label>
+                            </div>
+                            <div class = "mt-4">
+                                <br>
+                                <p><span style = "float: left;">3 items</span><span style = "float: right;">$34.72</span></p>
+                                <br>
+                                <!-- divider -->
+                                <hr>
+                                <br>
+                                <!-- item number one -->
+                                <p><b>Philly Cheesesteak</b></p>
+                                <h6>Choose to Add Fajita Veggies: Yes</h6>
+                                <br>
+                                <button class = "btn" style = "background-color: #ffbbed; float: left;" type = "button"><span class = "bi bi-trash3"></span>        1       <span class = "bi bi-plus-circle"></span></button>
+                                <span style = "float: right">$14.76</span>
+                                <br><br>
+                                <!-- item number two -->
+                                <p><b>Tiramisu</b></p>
+                                <h6>Choose to Add Pistachios on Top: Yes</h6>
+                                <br>
+                                <button class = "btn" style = "background-color: #ffbbed; float: left;" type = "button"><span class = "bi bi-trash3"></span>        2       <span class = "bi bi-plus-circle"></span></button>
+                                <span style = "float: right;">$19.96</span>
+                                <br><br>
+                                <hr>
+                                <br>
+                                <p><span style = "float: left; font-weight: bold;">Subtotal</span><span style = "float: right">$34.72</span></p>
+                                <br>
+                                <p><span style = "float: left; font-weight: bold;">Delivery Fee</span><span style = "float: right;">$2.49</span></p>
+                                <br>
+                                <p><span style = "float: left; font-weight: bold;">Taxes</span><span style = "float: right;">$3.41</span></p>
+                                <br>
+                                <label class = "form-check-label" for = "tip" style = "float: left; font-weight: bold;">Tip</label>
+                                <input type = "text" style = "float: right;" placeholder = "$0.00">
+                                <br><br>
+                                <p><span style = "float: left; font-size: 120%; font-weight: bold">Total</span><span style = "float: right;">$40.62</span></p>
+                                <br>
+                                <hr>
+                                <br>
+                                <p style = "font-weight: bold; font-size: 160%;">Payment</p>
+                                <br>
+                                <label class = "form-check-label" for = "pay" style = "float: left;">Visa - ****1234</label>
+                                <button class = "btn" type = "button" style = "float: right; background-color: #ffbbed;">Edit</button>
+                                <br><br>
+                                <hr>
+                                <br>
+                                <!-- button to add items which will take you back to the menu -->
+                                <a href = "menu.html"><button class = "btn" type = "button" style = "background-color: #ffbbed;">Add Items</button></a>
+                                <!-- button that will open a collapse which tells you that your order is on the way -->
+                                <button class = "btn" type = "button" style = "background-color: #ffbbed;" data-bs-toggle = "collapse" data-bs-target = "#multiCollapseExample4" aria-expanded = "false" aria-controls = "multiCollapseExample4">Complete Order</button>
+                                <!-- after clicking complete order -->
+                                <div class = "mt-4 collapse multi-collapse" id = "multiCollapseExample4">
+                                    <p>Your Order Is On the Way...</p>
+                                    <p style = "font-weight: bold;">1x Philly Cheesesteak</p>
+                                    <p style = "font-weight: bold;">2x Tiramisu</p>
+                                </div>
+                                <div class = "mt-4"></div>
+                            </div>
+                            <!-- card end -->
+                        </div>
+                        <!-- collapse end -->
+                    </div>
+                    <!-- column end -->
+                </div>
+                <!-- row end -->
+            </div>
+            <!-- container end -->
+        </div>
+
+        <!-- reserve table -->
+        <div class = "container col mt-4">
+            <br><br>
+            <h5 class = "text-center text-black"><b>Click "Reserve Table" in order to reserve a table.</b></h5>
+            <br>
+        </div>
+
+        <div class = "container text-center text-black">
+            <div class = "row align-items-start mt-4">
+                <div class = "col">
+                    <!-- reserve table -->
+                    <button class = "btn" style = "background-color: #ffbbed;" type = "button" data-bs-toggle = "collapse" data-bs-target = "#collapseExample7" aria-expanded = "false" aria-controls = "collapseExample7">Reserve Table</button>
+                    <div class = "mt-4 collapse multi-collapse" id = "collapseExample7">
+                        <div class = "text-center card card-body">
+                            <p style = "font-weight: bold;">Here, you can reserve a table at Mindful Savory & Sweets.</p>
+                            <div class = "mt-4">
+                                <button style = "background-color: #ffbbed;" class = "btn" type = "button" data-bs-toggle = "collapse" data-bs-target = "#collapseExample8" aria-expanded = "false" aria-controls = "collapseExample8">Find a Restaurant Near You</button>
+                            </div>
+                            <!-- open the restaurant address options -->
+                            <div class = "mt-4 collapse multi-collapse" id = "collapseExample8">
+                                <div class = "mt-4"></div>
+                                    <!-- radio buttons for each address -->
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">3091 Boulevard, Colonial Heights, VA 23834</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">1 Dunlop Village, Colonial Heights, VA 23834</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">384 Southpark Boulevard, Colonial Heights, VA 23834</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1"> <!-- checked -->
+                                        <label class = "form-check-label" for = "flexRadioDefault11">2423 W Hundred Rd, Chester, VA, 23831</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">3040 Bankhead Hwy, Austell, GA 30168</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">3835 Austell Rd SW, Marietta, GA 30008</label>
+                                    </div>
+                                    <div class = "form-check">
+                                        <input class = "form-check-input" type = "radio" name = "flexRadioDefault" id = "flexRadioDefault1">
+                                        <label class = "form-check-label" for = "flexRadioDefault11">4795 Jimmy Lee Smith Parkway, Hiram, GA 30141</label>
+                                    </div>
+
+                                    <br>
+                                    <br><br>
+                                    <p style = "font-weight: bold;">Once you click, "Choose Location", a form will popup where you'll be able to reserve a table.</p>
+                                    <!-- button to trigger the reservation modal -->
+                                    <button style = "background-color: #ffbbed;" type = "button" class = "btn" data-bs-toggle = "modal" data-bs-target = "#exampleModal1">
+                                        Choose Location
+                                    </button>
+                                    <br><br>
+
+                                    <!-- reservation modal -->
+                                    <div class = "modal fade" id = "exampleModal1" tabindex = "-1" aria-labelledby = "exampleModalLabel1" aria-hidden = "true">
+                                        <div class = "modal-dialog text-black d-flex justify-content-center">
+                                            <div class = "text-center modal-content w-75">
+                                                <div class = "modal-header">
+                                                    <h5 class = "modal-title" id = "exampleModalLabel1">Reserve Table</h5>
+                                                    <button type = "button" class = "btn-close" data-bs-dismiss = "modal" aria-label = "Close"></button>
+                                                </div>
+                                                <div class = "modal-body">
+                                                    <!-- first name input -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample1">First Name</label>
+                                                        <input type = "text" id = "formExample1" class = "form-control" required>
+                                                    </div>
+                                                    <!-- last name input -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample2">Last Name</label>
+                                                        <input type = "text" id = "formExample2" class = "form-control" required>
+                                                    </div>
+                                                    <!-- phone number input -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample3">Phone Number</label>
+                                                        <input type = "text" id = "formExample3" class = "form-control" required>
+                                                    </div>
+                                                    <!-- email input -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample4">Email</label>
+                                                        <input type = "email" id = "formExample4" class = "form-control" required>
+                                                    </div>
+                                                    <!-- date reservation -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample5">Date</label>
+                                                        <input type = "date" id = "formExample5" class = "form-control" required>
+                                                    </div>
+                                                    <!-- time reservation -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample6">Time</label>
+                                                        <input type = "time" id = "formExample6" class = "form-control" required>
+                                                    </div>
+                                                    <!-- table location -->
+                                                    <div class = "form-check mb-4">
+                                                        <p>Where Would You Like a Table?</p>
+                                                        <input class = "form-check-input" type = "radio" name = "formExample7" id = "formExample7" required>
+                                                        <label class = "form-check-label" for = "formExample7">Inside</label>
+                                                        <br>
+                                                        <input class = "form-check-input" type = "radio" name = "formExample8" id = "formExample8" required>
+                                                        <label class = "form-check-label" for = "formExample8">Outside</label>
+                                                        <br>
+                                                        <input class = "form-check-input" type = "radio" name = "formExample9" id = "formExample9" required>
+                                                        <label class = "form-check-label" for = "formExample9">It Does Not Matter</label>
+                                                    </div>
+                                                    <!-- how many people -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample10">How Many People to Be Seated?</label>
+                                                        <input type = "number" id = "formExample10" class = "form-control" required>
+                                                        <br>
+                                                        <p style = "color: red;">Disclaimer: All members of your party will have to be here for everyone to be seated.</p>
+                                                    </div>
+                                                    <!-- additional comments -->
+                                                    <div class = "form-outline mb-4">
+                                                        <label class = "form-label" for = "formExample11">Additional Comments</label>
+                                                        <textarea class = "form-control" id = "formExample11" rows = "4" placeholder = "i.e. Does any member of your party have allergies?"></textarea>
+                                                    </div>
+                                                    <!-- submit will close the form and "submit" their information into a database which right now, does not exist -->
+                                                    <!-- once they press submit, they will get an alert that says "Reservation Placed" -->
+                                                    <div id = "alertPlaced">
+                                                        <button type = "button" class = "btn mb-4" id = "alertPlaced" style = "background-color: #ffbbed;">Submit</button>
+                                                    </div>
+                                                <!-- modal body end -->
+                                                </div>
+                                            <!-- modal content -->
+                                            </div>
+                                        <!-- modal dialog end -->
+                                        </div>
+                                    <!-- modal fade end -->
+                                    </div>
+                                </div>
+                            <!-- inner collapse end -->
+                            </div>
+                        <!-- card end -->
+                        </div>
+                    <!-- collapse end -->
+                    </div>
+                <!-- column end -->
+                </div>
+            <!-- row end -->
+            </div>
+        <!-- container end -->
+        </div>
+
+        <!-- footer -->
+        <div class = "col">
+            <footer class = "text-center text-black" style = "background-color: #bbe838">
+                <!-- grid container -->
+                <div class = "container-fluid">
+                    <!-- social media links -->
+                    <section class = "mt-5">
+                        <!-- grid row -->
+                        <div class = "row text-center d-flex justify-content-center pt-5">
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "homepage.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Homepage</a>
+                                </h5>
+                            </div>
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <!-- text-uppercase -->
+                                <h5 class = "font-weight-bold">
+                                    <a href = "aboutUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">About Us</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "menu.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Menu</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "orderOnline.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Order Online</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "contactUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Contact Us</a>
+                                </h5>
+                            </div>
+                        <!-- end grid row -->
+                        </div>
+                    <!-- end links -->
+                    </section>
+
+                    <hr class = "my-3">
+
+                    <!-- <div class = "col"> -->
+                    <!-- grid container -->
+                    <div class = "container p-5">
+                        <!-- social media links -->
+                        <section class = "">
+                            <!-- grid row -->
+                            <div class = "row text-center expand-md d-flex justify-content-center pt-12">
+                                <!-- instagram -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://instagram.com/">
+                                            <!-- <img src = "insta.png" width = "25" height = "25"> -->
+                                            <i style = "color: #ef008c;" class = "bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- twitter -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://twitter.com/">
+                                            <!-- <img src = "twitter.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- facebook -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://facebook.com/">
+                                            <!-- <img src = "facebook.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- yelp -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://yelp.com/">
+                                            <!-- <img src = "yelp.png" width = "35" height = "25"> -->
+                                            <i style = "color: #a80000;" class = "bi bi-yelp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- linkedin -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://linkedin.com/">
+                                            <!-- <img src = "linkedin.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- gmail -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://google.com/">
+                                            <!-- <img src = "gmail.png" width = "32" height = "23"> -->
+                                            <i style = "color: #d82c20;" class = "bi bi-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <!-- end grid row -->
+                            </div>
+                        <!-- end links -->
+                        </section>
+                    </div>
+                    <hr class = "my-3">
+
+                    <div class = "text-center p-5" style = "background-color: #bbe838;">
+                        <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "30" height = "30" class = "d inline-block align-top rounded-pill"></a>
+                        Mindful Savory & Sweets | © 2023 Copyright
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </footer>
+        </div>
+        <!-- javaScript to trigger the live alert demo -->
+        <script>
+            const alertPlaceholder = document.getElementById('alertPlaced')
+            const appendAlert = (messgae, type) => {
+                const wrapper = document.createElement('div')
+                wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                    `   <div>${message}</div>`,
+                    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                    '</div>'
+                ].join('')
+                alertPlaceholder.append(wrapper)
+            }
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                appendAlert('Reservation Placed!', 'success')
+            })
+            }
+        </script>
+    </body>
+</html>

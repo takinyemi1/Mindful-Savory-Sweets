@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html style = "font-family: 'Courier';">
+    <head>
+        <title>Restaurant About Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <meta http-equiv="x-ua-compatible" content="ie=edge"> -->
+
+        <!-- <link rel = "icon" href = "img/mdb-favicon.ico" type = "image/x-icon"> -->
+        <!-- css link -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="css/basic-template.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <!-- javascript link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- icon fonts stylesheet -->
+        <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    </head>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier';
+            background-color: #e2f5eb;
+        }
+        footer {
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    
+    <body>
+        <!-- changing the color of the navbar -->
+        <nav class = "navbar fixed-top navbar-expand-md text-black justify-content-between navbar-light" style = "background-color: #bbe838;">
+            <!-- this class will keep the website information aligned in a box -->
+            <div class = "container-fluid">
+                <!-- brand logo for your navbar -->
+                <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "55" height = "55" class = "d inline-block align-top rounded-pill">
+                    <span class = "">Mindful Savory & Sweets</span></a>
+                <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarTogglerCollapsible" aria-expanded = "false" aria-label = "Toggle navigation">
+                    <span class = "navbar-toggler-icon"></span>
+                </button>
+
+                <div class = "collapse navbar-collapse" id = "navbarTogglerCollapsible">
+                    <!-- <a class = "navbar-brand" href = "#">[Insert Restaurant Name]</a> -->
+                    <div class = "navbar-nav nav-pills">
+                        <!-- lets you specify the link that is currently active -->
+                        <a class = "nav-item nav-link" href = "homepage.html">Home</a>
+                        <a class = "nav-item nav-link active" style = "background-color: #8bd884;" href = "aboutUs.html">About Us <span class = "sr-only"></span></a>
+                        <a class = "nav-item nav-link" href = "menu.html">Menu</a>
+                        <a class = "nav-item nav-link" href = "orderOnline.html">Order Online</a>
+                        <a class = "nav-item nav-link" href = "contactUs.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class = "container col">
+            <br><br><br><br>
+            <h1 class = "rounded row text-center text-black d-flex justify-content-center" style = "background-color: #0078d7;"><b>Mindful Savory & Sweets | About Us</b></h1>
+
+            <div class = "text-center text-black mt-5">
+                <h5><span style = "color: #0078d7; font-weight: bold;">Mindful Savory & Sweets</span> is a local restaurant that was founded in 2023. At this restaurant, we are dedicated to creating both sweet and savory surprises that 
+                    customers will love. We serve a variety of delicacies and cuisines from bang bang shrimp and boneless wings as our appetizers to colossal sandwiches, salads, and tri-tip steaks 
+                    as our entrees, and tiramisu as one of our desserts to end the day off sweetly.
+                </h5>
+                <h5 class = "mt-5">Visit <span style = "color: #0078d7; font-weight: bold;"><a href = "homepage.html" class = "link-offset-2 link-underline link-underline-opacity-0">Mindful Savory & Sweets</a></span> where you'll be guaranteed efficient and complimentary service!</h5>
+            </div>
+        </div>
+
+        <!-- interior carousel -->
+        <div class = "container text-center text-black mt-5"> 
+            <div class = "row align-items-start">
+                <div class = "col">
+                    <div class = "carousel slide rounded" id = "carouselExampleAutoplaying" data-bs-ride = "carousel"> <!--data-bs-ride = "carousel"-->
+                        <div class = "carousel-indicators">
+                            <button type = "button" data-bs-target = "#carouselExampleCaptions" data-bs-slide-to = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+                            <button type = "button" data-bs-target = "#carouselExampleCaptions" data-bs-slide-to = "1" aria-label = "Slide 2"></button>
+                            <button type = "button" data-bs-target = "#carouselExampleCaptions" data-bs-slide-to = "2" aria-label = "Slide 3"></button>
+                        </div>
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "res1.jpg" class = "rounded d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "res2.jpg" class = "rounded d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "res3.jpg" class = "rounded d-block w-100">
+                            </div>
+                        <!-- carousel end -->
+                        <!-- carousel next and previous buttons -->
+                        <button class = "carousel-control-next" type = "button" data-bs-target = "#carouselExampleRide" data-bs-slide = "next">
+                            <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                            <span class = "visually-hidden">Next</span>
+                        </button>
+                        <button class = "carousel-control-prev" type = "button" data-bs-target = "#carouselExampleRide" data-bs-slide = "prev">
+                            <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                            <span class = "visually-hidden">Previous</span>
+                        </button>
+                        </div>
+                    <!-- image set end -->
+                    </div>
+                <!-- container end -->
+                </div>
+                <!-- exterior carousel -->
+                <div class = "col">
+                    <div class = "carousel slide rounded" id = "carouselExampleAutoplaying" data-bs-ride = "carousel"> <!--data-bs-ride = "carousel"-->
+                        <div class = "carousel-indicators">
+                            <button type = "button" data-bs-target = "#carouselExampleCaptions" data-bs-slide-to = "0" class = "active" aria-current = "true" aria-label = "Slide 1"></button>
+                            <button type = "button" data-bs-target = "#carouselExampleCaptions" data-bs-slide-to = "1" aria-label = "Slide 2"></button>
+                            <button type = "button" data-bs-target = "#carouselExampleCaptions" data-bs-slide-to = "2" aria-label = "Slide 3"></button>
+                        </div>
+                        <div class = "carousel-inner">
+                            <div class = "carousel-item active">
+                                <img src = "ext1.jpg" class = "rounded d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "ext2.jpg" class = "rounded d-block w-100">
+                            </div>
+                            <div class = "carousel-item">
+                                <img src = "ext3.jpg" class = "rounded d-block w-100">
+                            </div>
+                        <!-- carousel end -->
+                        <!-- carousel next and previous buttons -->
+                        <button class = "carousel-control-next" type = "button" data-bs-target = "#carouselExampleRide" data-bs-slide = "next">
+                            <span class = "carousel-control-next-icon" aria-hidden = "true"></span>
+                            <span class = "visually-hidden">Next</span>
+                        </button>
+                        <button class = "carousel-control-prev" type = "button" data-bs-target = "#carouselExampleRide" data-bs-slide = "prev">
+                            <span class = "carousel-control-prev-icon" aria-hidden = "true"></span>
+                            <span class = "visually-hidden">Previous</span>
+                        </button>
+                        </div>
+                    <!-- image set end -->
+                    </div>
+                <!-- container end -->
+                </div>
+            <!-- row end -->
+            </div>
+        <!-- carousel end -->
+        </div>
+
+        <!-- footer -->
+        <div class = "col">
+            <footer class = "text-center text-black" style = "background-color: #bbe838">
+                <!-- grid container -->
+                <div class = "container-fluid">
+                    <!-- social media links -->
+                    <section class = "mt-5">
+                        <!-- grid row -->
+                        <div class = "row text-center d-flex justify-content-center pt-5">
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "homepage.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Homepage</a>
+                                </h5>
+                            </div>
+                            <!-- grid column -->
+                            <div class = "col-md-2">
+                                <!-- text-uppercase -->
+                                <h5 class = "font-weight-bold">
+                                    <a href = "aboutUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">About Us</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "menu.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Menu</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "orderOnline.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Order Online</a>
+                                </h5>
+                            </div>
+                            <div class = "col-md-2">
+                                <h5 class = "font-weight-bold">
+                                    <a href = "contactUs.html" class = "text-black link-offset-2 link-underline link-underline-opacity-0">Contact Us</a>
+                                </h5>
+                            </div>
+                        <!-- end grid row -->
+                        </div>
+                    <!-- end links -->
+                    </section>
+
+                    <hr class = "my-3">
+
+                    <!-- <div class = "col"> -->
+                    <!-- grid container -->
+                    <div class = "container p-5">
+                        <!-- social media links -->
+                        <section class = "">
+                            <!-- grid row -->
+                            <div class = "row text-center expand-md d-flex justify-content-center pt-12">
+                                <!-- instagram -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://instagram.com/">
+                                            <!-- <img src = "insta.png" width = "25" height = "25"> -->
+                                            <i style = "color: #ef008c;" class = "bi bi-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- twitter -->
+                                <!-- grid column -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://twitter.com/">
+                                            <!-- <img src = "twitter.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-twitter"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- facebook -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://facebook.com/">
+                                            <!-- <img src = "facebook.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-facebook"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- yelp -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://yelp.com/">
+                                            <!-- <img src = "yelp.png" width = "35" height = "25"> -->
+                                            <i style = "color: #a80000;" class = "bi bi-yelp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- linkedin -->
+                                <div class = "col-md-2">
+                                    <!-- text-uppercase -->
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://linkedin.com/">
+                                            <!-- <img src = "linkedin.png" width = "26" height = "25"> -->
+                                            <i class = "bi bi-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- gmail -->
+                                <div class = "col-md-2">
+                                    <div data-bs-ripple-init class = "bg-image hover-overlay shadow-1-strong rounded" data-ripple-color = "light">
+                                        <a href = "https://google.com/">
+                                            <!-- <img src = "gmail.png" width = "32" height = "23"> -->
+                                            <i style = "color: #d82c20;" class = "bi bi-google"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            <!-- end grid row -->
+                            </div>
+                        <!-- end links -->
+                        </section>
+                    </div>
+                    <hr class = "my-3">
+
+                    <div class = "text-center p-5" style = "background-color: #bbe838;">
+                        <a class = "navbar-brand" href = "homepage.html"><img src = "logo.png" width = "30" height = "30" class = "d inline-block align-top rounded-pill"></a>
+                        Mindful Savory & Sweets | © 2023 Copyright
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
